@@ -1,10 +1,10 @@
 # Smart Air Purifier (Project Fornuftig)
 
-Custom PCB based on ESP12-F (ESP8266) wifi module that serves as a smart controller for IKEA Fornuftig Air Purifiers. It's embedded microcontroller enables you to incorporate your device to home automation systems (preferably to Home Assistant) or control it via custom mobile applications as it enjoys support from wide variety of firmwares. This project is going to be implemented in two major phases: Hardware and Software design. Hardware is designed with KiCAD, will manufactured with assembly services by a chosen reputable Chinese company. Software is planned to be based on MicroPython and ESPHome firmwares.
+Custom PCB based on ESP12-F (ESP8266) wifi module that serves as a smart controller for IKEA Fornuftig Air Purifiers. It's embedded microcontroller enables you to incorporate your device to home automation systems (preferably to Home Assistant) or control it via custom mobile applications as it enjoys support from wide variety of firmwares. This project is going to be implemented in two major phases: Hardware and Software design. Hardware is designed with KiCAD, will be manufactured partly with assembly services by a chosen reputable Chinese company. Software is planned to be based on MicroPython and ESPHome firmwares.
 
 About IKEA Fornuftig: It's a compact, 31x45 cm air purifier launched in the market around 2020. It effectively cleans the indoor air from harmful PM2.5 particles and pollen for a reasonable price (approx. EUR60). The device is optimised for medium-sized bedrooms and has three fan speed. 
 
-Current status of the development: **Prototype is ready to order for testing**
+Current status of the development: **Prototype w/o rotary encoder is under manufacturing**
 
 Hardware: 
 * [x] Schematic
