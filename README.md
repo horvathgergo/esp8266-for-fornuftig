@@ -19,7 +19,7 @@ Software:
 
 ## Hardware
 
-<img src="https://user-images.githubusercontent.com/44551566/215359321-33e803bc-d121-4ce7-ab7e-455400228c79.png" width="700" height="400">
+<img src="https://user-images.githubusercontent.com/44551566/215624237-50fa134a-c428-43b6-a8c3-364afe3d16e4.png" width="700" height="400">
 
 PCB is the same size as the original one (90x40 mm) with mounting holes placed on it, thus it is supposed to fit just fine inside the plastic housing. Power supply of the fan is +24V, 0.8A. The board has a MC34063DR switching voltage regulator that provides the necessary power (+3v3, >500mA) for the wifi module. This version of the board is designed without a rotary switch. Furthermore in order to avoid unnecessary costs and save some space on the board physical filter reset button is not incorporated in this version as this function can be easily achieved through software side. 
 
