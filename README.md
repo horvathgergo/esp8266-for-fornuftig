@@ -4,13 +4,14 @@ Custom PCB based on ESP12-F (ESP8266) wifi module that serves as a smart control
 
 About IKEA Fornuftig: It's a compact, 31x45 cm air purifier launched in the market around 2020. It effectively cleans the indoor air from harmful PM2.5 particles and pollen for a reasonable price (approx. EUR60). The device is optimised for medium-sized bedrooms and has three fan speed. 
 
-Current status of the development: **Prototype w/o rotary encoder is under manufacturing**
+Current status of the development: **Prototype is ready and under testing**
 
 Hardware: 
 * [x] Schematic
-* [x] Layout with components
+* [x] Layout
+* [x] BOM, CPL
 * [x] 3D model 
-* [ ] Testing (hasn't started yet)
+* [ ] Testing
 
 Software:
 * [ ] ESPHome
@@ -25,7 +26,7 @@ PCB has the same size as the original one (90x40 mm) with mounting holes placed 
 
 The Purifier has a 4-pin PWM fan with +24VDC, 0.5A. The pins are power, ground, pwm, fg. PWM is a control pin for pulse width modulation and FG is the tacho pin for feedback purposes.
 
-MCU programming: the board supports only UART programming via TX, RX pin headers (no USB interface), thus USB to TTL converter is necessary to upload firmware. It is recommended to supply the module via VIN, GND pins when programming. It is compatible with +5-24V supply (but +3V3 supply is not guaranteed to work as you may experience some voltage drop via the buck converter so make sure to provide enough voltage during flashing). Boot button is located on the right side of the wifi module.
+MCU programming: the board supports only UART programming via TX, RX pin headers (as no USB interface), thus USB to TTL converter is necessary to upload your firmware. It is recommended to supply the module via VIN and GND pins during initial setup. It is compatible with +5-24V supply (note: in serial bootloader mode you need to supply at least +5V. Standard +3v3 won't work as you may experience some voltage drop via the buck converter so make sure to provide enough voltage during flashing. Supplying +5V won't hurt the ESP as the VIN pin of the board is not directly connected to chip). Boot button is located on the right side of the wifi module.
 
 BOM: Most of the chosen components are considered to be basic/standard parts at LCSC, however there are some extended components on the list (two large caps, inductor, esp, jst connectors and uart pin headers).
 
