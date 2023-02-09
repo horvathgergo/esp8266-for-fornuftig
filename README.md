@@ -22,11 +22,14 @@ Software:
 
 <img src="https://user-images.githubusercontent.com/44551566/215624237-50fa134a-c428-43b6-a8c3-364afe3d16e4.png" width="700" height="400">
 
-PCB has the same size as the original one (90x40 mm) with mounting holes placed on it, thus it is supposed to fit just fine inside the plastic housing. Power supply of the fan is +24V, 0.8A. The board has a MC34063DR switching voltage regulator that provides the necessary power (+3v3, >500mA) for the wifi module. This version of the board is designed without a rotary switch. Furthermore in order to avoid unnecessary costs and save some space on the board physical filter reset button is not incorporated in this version as this function can be easily achieved through software side. 
+PCB has the same size as the original one (90x40 mm) with mounting holes placed on it, thus it is supposed to fit just fine inside the plastic housing. Power supply of the fan is +24V, 0.8A. The board has a MC34063DR switching voltage regulator that provides the necessary power (+3v3, avg 70mA, peak >500mA) for the wifi module. This version of the board is designed without a rotary switch. Furthermore in order to avoid unnecessary costs and save some space on the board physical filter reset button is not incorporated in this version as this function can be easily achieved through software side. 
 
 The Purifier has a 4-pin PWM fan with +24VDC, 0.5A. The pins are power, ground, pwm, fg. PWM is a control pin for pulse width modulation and FG is the tacho pin for feedback purposes.
 
 MCU programming: the board supports only UART programming via TX, RX pin headers (as no USB interface), thus USB to TTL converter is necessary to upload your firmware. It is recommended to supply the module via VIN and GND pins during initial setup. It is compatible with +5-24V supply (note: in serial bootloader mode you need to supply at least +5V. Standard +3v3 won't work as you may experience some voltage drop via the buck converter so make sure to provide enough voltage during flashing. Supplying +5V won't hurt the ESP as the VIN pin of the board is not directly connected to chip). Boot button is located on the right side of the wifi module.
+
+<img src="https://user-images.githubusercontent.com/44551566/217821551-74f0ebfc-3d94-4d33-9dd0-2dede2cae0c8.jpg" width="700" height="400">
+
 
 BOM: Most of the chosen components are considered to be basic/standard parts at LCSC, however there are some extended components on the list (two large caps, inductor, esp, jst connectors and uart pin headers).
 
