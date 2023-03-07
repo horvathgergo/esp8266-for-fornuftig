@@ -15,7 +15,7 @@ Hardware:
 
 Software:
 * [ ] ESPHome
-* [ ] MicroPython
+* [x] MicroPython: ready (you can check the beta version here https://github.com/horvathgergo/uPurifier)
 
 
 ## Hardware
